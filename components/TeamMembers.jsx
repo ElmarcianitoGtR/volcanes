@@ -9,7 +9,7 @@ const TeamMembers = () => {
       id: 1,
       name: "Ana Rosa Ramirez Lopez",
       role: "Analista de datos",
-      description: "Especialista en React y Next.js con 5 años de experiencia en desarrollo de interfaces modernas y responsivas.",
+      description: "Especialista en análisis de datos con experiencia en la visualización y presentación de información.",
       skills: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
       github: "https://github.com/AnaRamirez60"
     },
@@ -25,7 +25,7 @@ const TeamMembers = () => {
       id: 3,
       name: "Gerardo Jimenez Rodriguez",
       role: "Diseñador de arquitectura IoT",
-      description: "Desarrolladora versátil con experiencia tanto en frontend como backend y DevOps.",
+      description: "Desarrollador de sistemas embebidos, diseño de circuitos, programación de Micro controladores a medida para tareas personalizadas, integración de tecnologías IoT, especialista en sensores y recopilación de datos por hardware",
       skills: ["Fritzing", "Arduino", "Hardware", "Sensores", "Modulos IoT"],
       github: "https://github.com/GeraMonster"
     },
@@ -33,15 +33,15 @@ const TeamMembers = () => {
       id: 4,
       name: "Kay Garcia Sanchez",
       role: "Cientifica de datos",
-      description: "Combina habilidades de diseño con desarrollo frontend para crear experiencias excepcionales.",
+      description: "Investigadora en Machine learning, algoritmos predictivos, modelado matematico, geoprocesamiento y optimizacion de hiperparametros.",
       skills: ["Figma", "React", "CSS", "UI/UX"],
-      github: "https://github.com/Kayychuw"
+      github: "https://github.com/Kayychuu"
     },
     {
       id: 5,
       name: "Cristofer Brandon Martinez Guadarrama",
-      role: "Frontend Developer",
-      description: "Soltero, carismatico con carro",
+      role: "Frontend Developer ",
+      description: "Especializado en la personalización e implementación de mapas interactivos adaptados a las necesidades del proyecto.",
       skills: ["Canva", "Html", "Figma", "CSS"],
       github: "https://github.com/laurafernandez"
     }
