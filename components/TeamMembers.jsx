@@ -1,7 +1,9 @@
-
-import React from 'react';
+'use client';
+import React, { useState, useEffect } from 'react';
 
 const TeamMembers = () => {
+  const [loading, setLoading] = useState(true);
+  
   const teamMembers = [
     {
       id: 1,
@@ -44,6 +46,27 @@ const TeamMembers = () => {
       github: "https://github.com/laurafernandez"
     }
   ];
+
+  // Simular carga inicial
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-black flex items-center justify-center">
+        <div className="text-center">
+          <div className="w-16 h-16 border-4 border-indigo-500 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+          <p className="text-gray-400 text-lg">Consultando modelo de temperatura...</p>
+          <p className="text-gray-500 text-sm">Conectando con la API en http://127.0.0.1:5000</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-black py-8">

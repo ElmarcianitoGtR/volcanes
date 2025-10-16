@@ -1,9 +1,10 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const HardwarePage = () => {
   const [activeComponent, setActiveComponent] = useState('esp32');
+  const [isLoading, setIsLoading] = useState(true);
 
   const components = {
     esp32: {
@@ -81,7 +82,28 @@ const HardwarePage = () => {
     }
   };
 
+  useEffect(() => {
+    // Simular conexión con componentes hardware
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   const currentComponent = components[activeComponent];
+
+  if (isLoading) {
+    return (
+      <div className="ml-20 bg-black min-h-screen text-white flex items-center justify-center">
+        <div className="text-center">
+          <div className="w-16 h-16 border-4 border-indigo-500 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+          <h2 className="text-xl font-light text-gray-300 mb-2">Conectando con componentes...</h2>
+          <p className="text-gray-500 text-sm">Inicializando sistema de hardware</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="ml-20 bg-black min-h-screen text-white">
