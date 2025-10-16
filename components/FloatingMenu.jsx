@@ -15,7 +15,7 @@ const FloatingMenu = () => {
   ];
 
   return (
-    <div className="fixed left-0 top-1/4 h-70 w-60 bg-gray-900/50 border-r ml-4 z-50 rounded-3xl flex flex-col justify-center items-start ">
+    <div className="fixed left-0 top-1/4 h-70 w-60 bg-gray-50/10 border-r ml-4 z-50 rounded-3xl flex flex-col justify-center items-start ">
 
       {/* Navegación */}
       <nav className="p-4 w-60">
